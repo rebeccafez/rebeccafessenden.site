@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% import "partials/article_macros.html" as article_macros %}
+
+{% block content %}
+<h1>Hello there</h1>
+<p>Thanks for stopping by.</p>
+<h2>About Me</h2>
+<p>I'm Rebecca. I'm a student, occasional IT person, animal lover, haver of opinions about technology, and fan of weird music.</p>
+<p>I initially made this website for a school project but I use it to share information that I find useful.</p>
+<p>If you want to know more about me, check out the <a href="">about page</a>.</p>
+<h2>Recent Articles</h2>
+{% set articles = get_section(path="articles/_index.md") %}
+{% for article in articles.pages | reverse | slice(end=5) %}
+{{ article_macros::article_preview(article=article) }}
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,129 @@
+@import url('colors.css');
+@import url(https://fonts.bunny.net/css?family=noto-serif:400|poppins:600);
+
+html {
+	font-size: 100%;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	color: var(--fg);
+	font-family: 'Noto Serif', 'Garamond', serif;
+	font-size: 15pt;
+	line-height: 1.5em;
+	background: var(--bg);
+  margin: 0;
+}
+
+#content {
+	word-break: break-word;
+	margin: auto;
+	max-width: 56em;
+	padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins, Helvetica, Tahoma, sans-serif;
+  line-height: 1em;
+  font-weight: 600;
+}
+
+h4, 
+h5, 
+h6 {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+h1 {
+	font-size: 3.5em;
+	line-height: 1.2em;
+	margin: 0;
+}
+
+h2 {
+	margin: 2em 0 1em;
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: 600;
+	margin: 1em 0 1em;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: square;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid var(--fg);
+}
+
+th, 
+td {
+  border: 1px solid var(--fg);
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg2);
+}
+
+#navbar {
+  background-color: var(--navbar-bg);
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline-block;
+  padding: 4px;
+}
+
+#navbar a {
+  color: var(--bg);
+}
+
+.nav-left {
+  padding: 4px;
+}
+
+.headline {
+  font-family: Poppins, Helvetica, Tahoma, sans-serif;
+  font-size: 1.5em;
+}
+
+time {
+  font-family: Poppins, Helvetica, Tahoma, sans-serif;
+  font-size: 0.9em;
+}
+
+.tag {
+  font-family: Poppins, Helvetica, Tahoma, sans-serif;
+  font-size: 0.9em;
+}

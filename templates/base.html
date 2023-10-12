@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rebecca's Website</title>
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-left">
+      <a href="{{ get_url(path='') }}" class="site-title">Rebecca's Website</a>
+    </div>
+    <div class="nav-right">
+      <ul class="navigation-links">
+        <li><a href="{{ get_url(path='articles/') }}">Articles</a></li>
+        <li><a href="{{ get_url(path='tags/') }}">Tags</a></li>
+        <li><a href="{{ get_url(path='@/about.md' )}}">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="content">
+    {% block content %}{% endblock content %}
+  </div>
+</body>
+</html>

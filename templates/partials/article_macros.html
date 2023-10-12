@@ -1,0 +1,9 @@
+{% macro article_preview(article) %}
+<div class="article-preview">
+  <a href="{{ article.permalink }}" class="headline">{{ article.title }}</a><br>
+  <i class="fas fa-calendar-alt"></i> <time datetime="{{ article.date }}">{{ article.date }}</time>
+  {% if article.taxonomies.tags %}
+  <i class="fas fa-tags"></i>{% for tag in article.taxonomies.tags %} <a href="{{ get_taxonomy_url(name=tag, kind='tags')}}" class="tag">{{ tag }}</a> {% endfor %}
+  {% endif %}
+</div>
+{% endmacro %}
