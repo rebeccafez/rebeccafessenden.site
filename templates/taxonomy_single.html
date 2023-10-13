@@ -1,1 +1,9 @@
 {% extends "base.html" %}
+{% import "partials/article_macros.html" as article_macros %}
+
+{% block content %}
+<h1>Articles tagged with {{ term.name }}</h1>
+{% for article in term.pages %}
+{{ article_macros::article_preview(article=article) }}
+{% endfor %}
+{% endblock content %}
