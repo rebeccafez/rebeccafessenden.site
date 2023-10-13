@@ -4,7 +4,7 @@
 <h1>Things I've written about</h1>
 <ul>
   {% for tag in terms %}
-    <li><a href="">{{ tag.name }}</a></li>
+  <li><a href="{{ tag.permalink }}">{{ tag.name }}</a></li>
   {% endfor %}
 </ul>
 {% endblock %}
