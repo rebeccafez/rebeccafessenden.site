@@ -24,4 +24,4 @@ The fonts used on this site are as follows:
 The colorscheme comes from the Nord palette by Arctic Ice Studio.  
  The server is hosted on Vultr.  
  The server is managed with a
-[custom Ansible playbook](https://github.com/rebeccafez/iac).
+[custom Ansible playbook](https://github.com/rebeccafez/ansible-vps)
